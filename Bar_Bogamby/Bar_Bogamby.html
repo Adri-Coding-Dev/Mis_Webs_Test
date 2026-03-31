@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bar Bogamby | Bar moderno en Córdoba</title>
+  <meta name="description"
+    content="Descubre Bar Bogamby, un bar moderno en Córdoba con tartas, bocadillos y el mejor ambiente para todos." />
+  <meta name="keywords"
+    content="bar en Córdoba, bar moderno Córdoba, bocadillos Córdoba, tartas Córdoba, Bar Bogamby" />
+  <meta property="og:title" content="Bar Bogamby | Bar moderno en Córdoba" />
+  <meta property="og:description"
+    content="Descubre Bar Bogamby, un bar moderno en Córdoba con tartas, bocadillos y el mejor ambiente para todos." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header id="header" role="banner">
+    <div class="header-inner">
+      <a href="#inicio" class="logo" aria-label="Bar Bogamby - Inicio">Bar <span>Bogamby</span></a>
+      <nav role="navigation" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#carta">Carta</a>
+        <a href="#galeria">Galería</a>
+        <a href="#opiniones">Opiniones</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a href="tel:607450873" class="btn-call-header" aria-label="Llamar al Bar Bogamby">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path
+            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.38 2 2 0 0 1 3.6 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l.81-.81a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+        </svg>
+        Llamar ahora
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Menú móvil">
+      <a href="#inicio" onclick="closeMobileNav()">Inicio</a>
+      <a href="#carta" onclick="closeMobileNav()">Carta</a>
+      <a href="#galeria" onclick="closeMobileNav()">Galería</a>
+      <a href="#opiniones" onclick="closeMobileNav()">Opiniones</a>
+      <a href="#ubicacion" onclick="closeMobileNav()">Ubicación</a>
+      <a href="#contacto" onclick="closeMobileNav()">Contacto</a>
+      <a href="tel:607450873" class="btn-call-mobile">📞 Llamar ahora: 607 450 873</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" aria-label="Bienvenida">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-content">
+      <span class="hero-badge">Bar en Córdoba · Norte Sierra</span>
+      <h1 class="hero-title">Bar <span class="accent">Bogamby</span></h1>
+      <p class="hero-subtitle">Tu sitio de confianza para disfrutar cualquier noche.<br>Ambiente acogedor, buena carta y
+        el mejor rollo para todos.</p>
+      <div class="hero-btns">
+        <a href="#carta" class="btn-primary">Ver carta</a>
+        <a href="tel:607450873" class="btn-secondary">📞 Llamar / Reservar</a>
+      </div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- SOBRE EL BAR -->
+  <section id="sobre" aria-labelledby="sobre-title">
+    <div class="section-inner">
+      <div class="sobre-grid">
+        <div class="sobre-img fade-in">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80"
+            alt="Interior moderno del Bar Bogamby en Córdoba" loading="lazy" />
+        </div>
+        <div class="fade-in">
+          <p class="section-label">Quiénes somos</p>
+          <h2 class="section-title" id="sobre-title">Un bar para todos,<br>siempre bienvenido</h2>
+          <div class="divider"></div>
+          <p class="section-subtitle">En Bar Bogamby encontrarás el ambiente perfecto para cualquier noche. Un espacio
+            moderno y acogedor en el corazón de Córdoba, pensado para que te sientas como en casa.</p>
+          <div class="features">
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">♿</div>
+              <div>
+                <h4>Accesible</h4>
+                <p>Espacio adaptado para personas con movilidad reducida</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🍻</div>
+              <div>
+                <h4>Buen ambiente</h4>
+                <p>Para todas las edades, ideal para cualquier noche</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🍰</div>
+              <div>
+                <h4>Tartas y dulces</h4>
+                <p>Elaboradas con cariño para endulzar tu visita</p>
+              </div>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon" aria-hidden="true">🥪</div>
+              <div>
+                <h4>Amplia carta</h4>
+                <p>Bocadillos, bebidas y mucho más para todos los gustos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTA -->
+  <section id="carta" aria-labelledby="carta-title">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Nuestra oferta</p>
+        <h2 class="section-title" id="carta-title">La carta</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Desde tartas caseras hasta bocadillos contundentes, pasando por toda clase de
+          bebidas.</p>
+      </div>
+      <div class="tabs" role="tablist" aria-label="Categorías de la carta">
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-tartas"
+          onclick="switchTab(event, 'tartas')">🍰 Tartas</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-bocadillos"
+          onclick="switchTab(event, 'bocadillos')">🥪 Bocadillos</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-alcohol"
+          onclick="switchTab(event, 'alcohol')">🍺 Bebidas alcohólicas</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-gas"
+          onclick="switchTab(event, 'gas')">🥤 Bebidas con gas</button>
+      </div>
+
+      <div id="panel-tartas" class="menu-panel active" role="tabpanel" aria-labelledby="tab-tartas">
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=75"
+            alt="Tarta de chocolate" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Tarta de chocolate</h4>
+            <p>Bizcocho húmedo, ganache de chocolate negro y cobertura brillante. Irresistible.</p>
+            <span class="menu-price">3,50 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=75"
+            alt="Tarta de queso" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Tarta de queso</h4>
+            <p>La favorita de siempre. Cremosa, con base de galleta y coulis de frutos rojos.</p>
+            <span class="menu-price">3,50 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=400&q=75"
+            alt="Tarta de zanahoria" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Tarta de zanahoria</h4>
+            <p>Esponjosa y especiada, con frosting de queso crema. Un clásico renovado.</p>
+            <span class="menu-price">3,50 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&q=75"
+            alt="Tarta de limón" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Tarta de limón</h4>
+            <p>Refrescante lemon curd sobre base crujiente y merengue tostado.</p>
+            <span class="menu-price">3,50 €</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-bocadillos" class="menu-panel" role="tabpanel" aria-labelledby="tab-bocadillos">
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=400&q=75"
+            alt="Bocadillo de jamón serrano" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Bocadillo de jamón</h4>
+            <p>Pan crujiente de barra, jamón serrano y tomate natural rallado al gusto.</p>
+            <span class="menu-price">3,00 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=400&q=75"
+            alt="Bocadillo de lomo" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Bocadillo de lomo</h4>
+            <p>Lomo de cerdo a la plancha con pimiento verde frito. El más pedido.</p>
+            <span class="menu-price">3,50 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1481070414801-51fd732d7184?w=400&q=75"
+            alt="Bocadillo vegetal" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Bocadillo vegetal</h4>
+            <p>Lechuga, tomate, pepino, zanahoria y alioli casero. Fresco y sabroso.</p>
+            <span class="menu-price">2,80 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1628191139182-dbc5cd6f6e44?w=400&q=75"
+            alt="Bocadillo mixto" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Bocadillo mixto</h4>
+            <p>Jamón cocido y queso fundido en pan tostado. Simple y delicioso.</p>
+            <span class="menu-price">3,00 €</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-alcohol" class="menu-panel" role="tabpanel" aria-labelledby="tab-alcohol">
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1566633806827-5e8a4a7ef07e?w=400&q=75"
+            alt="Cerveza" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Cerveza</h4>
+            <p>Caña de barril bien fría. El acompañante ideal de cualquier noche.</p>
+            <span class="menu-price">1,50 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1510626176961-4b57d4fbad03?w=400&q=75"
+            alt="Vino de la casa" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Vino de la casa</h4>
+            <p>Tinto o blanco, siempre a buen precio y buena calidad.</p>
+            <span class="menu-price">1,50 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&q=75"
+            alt="Combinados" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Combinados</h4>
+            <p>Gin-tonic, vodka con limón, ron con cola y mucho más. Pregúntanos.</p>
+            <span class="menu-price">5,00 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1571950006418-f57e56f8b08e?w=400&q=75"
+            alt="Chupitos" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Chupitos</h4>
+            <p>Variedad de chupitos para animar la noche. ¡Siempre hay motivo para celebrar!</p>
+            <span class="menu-price">1,50 €</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="panel-gas" class="menu-panel" role="tabpanel" aria-labelledby="tab-gas">
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=400&q=75"
+            alt="Refrescos" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Refrescos</h4>
+            <p>Coca-Cola, Fanta naranja, Fanta limón, Sprite. Bien frías siempre.</p>
+            <span class="menu-price">1,80 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400&q=75"
+            alt="Agua con gas" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Agua con gas</h4>
+            <p>Agua mineral con gas, la opción refrescante y ligera de siempre.</p>
+            <span class="menu-price">1,50 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=75"
+            alt="Tónica" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Tónica</h4>
+            <p>Tónica clásica, también disponible como acompañante de tu ginebra favorita.</p>
+            <span class="menu-price">1,80 €</span>
+          </div>
+        </div>
+        <div class="menu-card fade-in">
+          <img class="menu-card-img" src="https://images.unsplash.com/photo-1523371683783-a13e5c0f54cd?w=400&q=75"
+            alt="Red Bull" loading="lazy" />
+          <div class="menu-card-body">
+            <h4>Red Bull</h4>
+            <p>La bebida energética de referencia. Sola o mezclada, para los que aguantan toda la noche.</p>
+            <span class="menu-price">2,50 €</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" aria-labelledby="galeria-title">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Nuestro espacio</p>
+        <h2 class="section-title" id="galeria-title">Galería</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Un vistazo a Bar Bogamby. Ven y descúbrelo tú mismo.</p>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item fade-in"
+          onclick="openLightbox('https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=1200&q=90')"
+          role="button" tabindex="0" aria-label="Ver imagen de la barra del bar"
+          onkeypress="if(event.key==='Enter')openLightbox('https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=1200&q=90')">
+          <img src="https://images.unsplash.com/photo-1514190051997-0f6f39ca5cde?w=800&q=80" alt="Barra del Bar Bogamby"
+            loading="lazy" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+            </svg></div>
+        </div>
+        <div class="gallery-item fade-in"
+          onclick="openLightbox('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200&q=90')" role="button"
+          tabindex="0" aria-label="Ver imagen del interior">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80" alt="Interior del Bar Bogamby"
+            loading="lazy" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+            </svg></div>
+        </div>
+        <div class="gallery-item fade-in"
+          onclick="openLightbox('https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=1200&q=90')"
+          role="button" tabindex="0" aria-label="Ver imagen de tartas">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80"
+            alt="Tartas del Bar Bogamby" loading="lazy" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+            </svg></div>
+        </div>
+        <div class="gallery-item fade-in"
+          onclick="openLightbox('https://images.unsplash.com/photo-1566633806827-5e8a4a7ef07e?w=1200&q=90')"
+          role="button" tabindex="0" aria-label="Ver imagen de cervezas">
+          <img src="https://images.unsplash.com/photo-1566633806827-5e8a4a7ef07e?w=600&q=80"
+            alt="Cervezas en Bar Bogamby" loading="lazy" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+            </svg></div>
+        </div>
+        <div class="gallery-item fade-in"
+          onclick="openLightbox('https://images.unsplash.com/photo-1553909489-cd47e0907980?w=1200&q=90')" role="button"
+          tabindex="0" aria-label="Ver imagen de bocadillos">
+          <img src="https://images.unsplash.com/photo-1553909489-cd47e0907980?w=600&q=80"
+            alt="Bocadillos del Bar Bogamby" loading="lazy" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+            </svg></div>
+        </div>
+        <div class="gallery-item fade-in"
+          onclick="openLightbox('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&q=90')"
+          role="button" tabindex="0" aria-label="Ver imagen de ambiente nocturno">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80"
+            alt="Ambiente nocturno Bar Bogamby" loading="lazy" />
+          <div class="gallery-overlay"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7" />
+            </svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Imagen ampliada"
+    onclick="closeLightbox()">
+    <button class="lightbox-close" aria-label="Cerrar imagen" onclick="closeLightbox()">✕</button>
+    <img id="lightboxImg" src="" alt="Imagen ampliada del Bar Bogamby" />
+  </div>
+
+  <!-- OPINIONES -->
+  <section id="opiniones" aria-labelledby="opiniones-title">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Lo que dicen de nosotros</p>
+        <h2 class="section-title" id="opiniones-title">Opiniones</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="rating-hero fade-in">
+        <div class="rating-number" aria-label="Puntuación 4.6 sobre 5">4.6</div>
+        <div>
+          <div class="rating-stars" aria-hidden="true">★★★★★</div>
+          <div class="rating-info">
+            <strong>Valoración media en Google</strong>
+            <p>Basada en +80 reseñas verificadas</p>
+          </div>
+        </div>
+      </div>
+      <div class="reviews-grid">
+        <article class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" aria-hidden="true">M</div>
+            <div>
+              <div class="review-name">María G.</div>
+              <div class="review-date">hace 2 semanas</div>
+            </div>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+          </div>
+          <p class="review-text">¡Un bar increíble! Las tartas están buenísimas, especialmente la de queso. El ambiente
+            es muy acogedor y el trato del personal es genial. Sin duda mi sitio favorito en Córdoba para tomar algo por
+            las noches.</p>
+        </article>
+        <article class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" aria-hidden="true">J</div>
+            <div>
+              <div class="review-name">Javier P.</div>
+              <div class="review-date">hace 1 mes</div>
+            </div>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+          </div>
+          <p class="review-text">Un local muy cómodo y bien decorado. Fui con mi familia y todos quedaron encantados.
+            Los bocadillos están muy ricos y los precios son muy razonables. Volvemos seguro.</p>
+        </article>
+        <article class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" aria-hidden="true">L</div>
+            <div>
+              <div class="review-name">Laura F.</div>
+              <div class="review-date">hace 3 semanas</div>
+            </div>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+          </div>
+          <p class="review-text">Sitio perfecto para salir por las noches. El ambiente es muy agradable y la atención es
+            excelente. Me encanta que sea un bar para todos, tanto jóvenes como mayores. ¡Muy recomendable!</p>
+        </article>
+        <article class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" aria-hidden="true">A</div>
+            <div>
+              <div class="review-name">Antonio R.</div>
+              <div class="review-date">hace 2 meses</div>
+            </div>
+            <div class="review-stars" aria-label="4 estrellas">★★★★☆</div>
+          </div>
+          <p class="review-text">Gran descubrimiento en la sierra cordobesa. El local es muy moderno y limpio. Las cañas
+            bien tiradas y los chupitos muy bien servidos. La música también está muy bien elegida.</p>
+        </article>
+        <article class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" aria-hidden="true">C</div>
+            <div>
+              <div class="review-name">Carmen S.</div>
+              <div class="review-date">hace 1 semana</div>
+            </div>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+          </div>
+          <p class="review-text">Llevé a mis padres mayores y me alegró mucho ver que el bar es completamente accesible.
+            El personal muy atento y amable con ellos. Eso marca la diferencia. 100% recomendado.</p>
+        </article>
+        <article class="review-card fade-in">
+          <div class="review-header">
+            <div class="review-avatar" aria-hidden="true">D</div>
+            <div>
+              <div class="review-name">Diego M.</div>
+              <div class="review-date">hace 5 días</div>
+            </div>
+            <div class="review-stars" aria-label="5 estrellas">★★★★★</div>
+          </div>
+          <p class="review-text">De los mejores bares que conozco en la zona. Bocadillos de lujo a precios asequibles,
+            cerveza siempre fría y buen rollo garantizado. Ya es nuestro punto de reunión todas las semanas.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN Y HORARIO -->
+  <section id="ubicacion" aria-labelledby="ubicacion-title">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Dónde estamos</p>
+        <h2 class="section-title" id="ubicacion-title">Ubicación y horario</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="ubicacion-grid">
+        <div class="map-wrap fade-in">
+          <iframe title="Mapa de ubicación de Bar Bogamby en Córdoba"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d-4.761!3d37.917!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDU1JzAxLjIiTiA0wrA0NSczOS42Ilc!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Mapa de Google Maps mostrando la ubicación del Bar Bogamby">
+          </iframe>
+        </div>
+        <div class="info-block fade-in">
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">📍</div>
+            <div>
+              <h4>Dirección</h4>
+              <p>C. Don Antonio Gómez Aguilar 11,<br>Nte. Sierra, 14960 Córdoba</p>
+              <a href="https://www.google.com/maps/place/Bar+Bogamby/@37.9108324,-4.7893039,18.17z/data=!3m1!5s0xd6cdf17a81d352b:0x5b01c389aa43e81e!4m15!1m8!3m7!1s0xd6cdf17a5fed80f:0xa67666f6cf333464!2sC.+Don+Antonio+G%C3%B3mez+Aguilar,+11,+Nte.+Sierra,+14012+C%C3%B3rdoba!3b1!8m2!3d37.9111232!4d-4.7876267!16s%2Fg%2F11qm_9zj70!3m5!1s0xd6cdf17a665bdb7:0xd49fd265352346b2!8m2!3d37.91116!4d-4.7876225!16s%2Fg%2F11b807gmcb?entry=ttu&g_ep=EgoyMDI2MDMyOS4wIKXMDSoASAFQAw%3D%3D"
+                class="btn-directions" target="_blank" rel="noopener noreferrer"
+                aria-label="Abrir indicaciones en Google Maps">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                </svg>
+                Cómo llegar
+              </a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">🕐</div>
+            <div>
+              <h4>Horario</h4>
+              <table class="schedule-table" aria-label="Horario de apertura">
+                <tbody>
+                  <tr>
+                    <td>Martes – Jueves</td>
+                    <td>20:30 – 0:30</td>
+                  </tr>
+                  <tr>
+                    <td>Viernes</td>
+                    <td>20:30 – 2:00</td>
+                  </tr>
+                  <tr>
+                    <td>Sábado</td>
+                    <td>20:30 – 2:00</td>
+                  </tr>
+                  <tr>
+                    <td>Domingo</td>
+                    <td>20:30 – 0:30</td>
+                  </tr>
+                  <tr>
+                    <td>Lunes</td>
+                    <td>20:30 – 0:30</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon" aria-hidden="true">📞</div>
+            <div>
+              <h4>Teléfono</h4>
+              <p><a href="tel:607450873"
+                  style="color:var(--stone);font-weight:700;font-size:1.1rem;text-decoration:none;">607 450 873</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" aria-labelledby="contacto-title">
+    <div class="section-inner">
+      <div class="fade-in">
+        <p class="section-label">Escríbenos</p>
+        <h2 class="section-title" id="contacto-title">Contacto</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">¿Tienes alguna pregunta o quieres reservar? Estamos aquí para ayudarte.</p>
+      </div>
+      <div class="contacto-grid">
+        <div class="contact-info fade-in">
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Teléfono</h4>
+              <a href="tel:607450873">607 450 873</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Dirección</h4>
+              <a href="https://maps.google.com/?q=C.+Don+Antonio+Gómez+Aguilar+11+Córdoba" target="_blank"
+                rel="noopener noreferrer">C. Don Antonio Gómez Aguilar 11, Córdoba</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <div>
+              <h4>Horario de apertura</h4>
+              <a href="#ubicacion">Ver horario completo</a>
+            </div>
+          </div>
+          <div style="padding: 0 0 0 4px;">
+            <p
+              style="font-size:0.88rem;color:var(--gray-text);margin-bottom:14px;font-family:'Poppins',sans-serif;font-weight:600;text-transform:uppercase;letter-spacing:1.5px;">
+              Síguenos</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook de Bar Bogamby">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram de Bar Bogamby">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="TikTok de Bar Bogamby">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.78a4.85 4.85 0 01-1.01-.09z" />
+                </svg>
+              </a>
+              <a href="https://wa.me/34607450873" class="social-link" aria-label="WhatsApp de Bar Bogamby"
+                target="_blank" rel="noopener noreferrer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="fade-in">
+          <form class="contact-form" id="contactForm" onsubmit="handleSubmit(event)" novalidate
+            aria-label="Formulario de contacto">
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required autocomplete="name"
+                aria-required="true" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono (opcional)</label>
+              <input type="tel" id="phone" name="phone" placeholder="Ej: 600 000 000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" placeholder="¿En qué podemos ayudarte?" required
+                aria-required="true"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Enviar mensaje</button>
+            <div class="form-success" id="formSuccess" role="alert" aria-live="polite">
+              ✅ ¡Mensaje enviado! Nos pondremos en contacto contigo pronto.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Bar <span>Bogamby</span></div>
+        <p class="footer-desc">Tu bar de confianza en Córdoba. Un ambiente moderno, acogedor y para todos. Ven a
+          disfrutar cualquier noche con buena compañía.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+          <a href="https://wa.me/34607450873" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#opiniones">Opiniones</a></li>
+          <li><a href="#ubicacion">Ubicación</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contacto</h5>
+        <ul>
+          <li><a href="tel:607450873">607 450 873</a></li>
+          <li><a href="https://maps.google.com/?q=Bar+Bogamby+Córdoba" target="_blank" rel="noopener noreferrer">C. Don
+              Antonio Gómez Aguilar 11</a></li>
+          <li><a href="#ubicacion">Martes–Dom: 20:30 – 0:30/2:00</a></li>
+        </ul>
+        <div style="margin-top:24px;">
+          <h5>Horario especial</h5>
+          <p style="font-size:0.85rem;color:rgba(255,255,255,0.55);line-height:1.7;">
+            Vie &amp; Sáb: hasta las 2:00h<br>
+            Resto de días: hasta las 0:30h
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Bar Bogamby · Córdoba · Todos los derechos reservados</span>
+      <span>Hecho con ❤️ en Córdoba</span>
+    </div>
+  </footer>
+
+  <!-- FLOATING CALL BTN (mobile) -->
+  <a href="tel:607450873" class="float-call" aria-label="Llamar al Bar Bogamby ahora">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-width="2.5" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round"
+        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+    </svg>
+    Llamar ahora
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
