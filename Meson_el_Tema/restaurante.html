@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Tema · Cocina de Raíz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <link rel="stylesheet" href="restaurante.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">El <span>Tema</span></a>
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#menu">Carta</a></li>
+      <li><a href="#ambiente">Ambiente</a></li>
+      <li><a href="#reserva" class="nav-cta">Reservar Mesa</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#nosotros" class="mob-link">Nosotros</a>
+    <a href="#menu" class="mob-link">Carta</a>
+    <a href="#ambiente" class="mob-link">Ambiente</a>
+    <a href="#reserva" class="mob-link">Reservar Mesa</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">· Tradición &amp; Sabor ·</p>
+      <h1 class="hero-title">El<br><em>Tema</em></h1>
+      <div class="hero-divider">
+        <hr /><span class="leaf">✦</span>
+        <hr />
+      </div>
+      <p class="hero-sub">Cocina de raíz. Ingredientes de temporada.<br>Una experiencia que alimenta el alma.</p>
+      <div class="hero-btns" style="margin-top:2.2rem;">
+        <a href="#menu" class="btn btn-primary">Ver la Carta</a>
+        <a href="#reserva" class="btn btn-outline">Reservar Mesa</a>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Descubrir</span>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=900&q=80"
+          alt="Interior del restaurante La Encina" loading="lazy" />
+      </div>
+      <div class="about-text reveal">
+        <span class="section-tag">Nuestra Historia</span>
+        <h2 class="section-title">Más de tres décadas<br><em>cultivando sabores</em></h2>
+        <div class="ornament">
+          <div class="dot"></div>
+          <hr />
+          <div class="dot"></div>
+        </div>
+        <p class="about-body">El Tema nació con la convicción de que la mejor cocina es aquella
+          que respeta el producto y honra el territorio. Nos enorgullece traer a tu mesa lo
+          mejor de la huerta local, de los mercados de temporada y de las recetas que han pasado de generación en
+          generación.</p>
+        <p class="about-body" style="margin-top:1rem;">Cada plato que sale de nuestra cocina lleva consigo horas de
+          dedicación, ingredientes seleccionados y el calor genuino de quienes aman lo que hacen.</p>
+        <div class="about-stats">
+          <div class="stat-item">
+            <div class="stat-num">38</div>
+            <div class="stat-label">Años de historia</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Producto local</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">4.3 ★</div>
+            <div class="stat-label">Valoración media</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="section-pad">
+    <div class="container">
+      <div class="menu-header reveal">
+        <span class="section-tag">Gastronomía</span>
+        <h2 class="section-title">Nuestra <em>Carta</em></h2>
+        <div class="ornament" style="justify-content:center;">
+          <div class="dot"></div>
+          <hr />
+          <div class="dot"></div>
+        </div>
+        <p style="font-size:1.1rem;font-style:italic;color:var(--text-lt);max-width:500px;margin:0 auto;">Sabores de
+          temporada, elaborados con mimo y técnica tradicional.</p>
+      </div>
+      <div class="menu-tabs reveal">
+        <button class="tab-btn active" data-cat="entrantes">Entrantes</button>
+        <button class="tab-btn" data-cat="principales">Principales</button>
+        <button class="tab-btn" data-cat="postres">Postres</button>
+        <button class="tab-btn" data-cat="bebidas">Bebidas</button>
+      </div>
+      <div class="menu-grid" id="menuGrid">
+
+        <!-- ENTRANTES -->
+        <div class="menu-card active" data-cat="entrantes">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1673844297046-f8cf74b98c21?w=600&q=80"
+              alt="Croquetas de jamón ibérico" loading="lazy" />
+            <span class="card-badge">Clásico</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Croquetas de Jamón Ibérico</div>
+            <div class="card-desc">Bechamel artesana, jamón de bellota D.O., fritura perfecta. Doradas fuera, cremosas
+              dentro.</div>
+            <div class="card-footer">
+              <span class="card-price">8,50 €</span>
+              <span class="card-allergens">Gluten · Lácteos · Huevo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card active" data-cat="entrantes">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=600&q=80" alt="Gazpacho andaluz"
+              loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-title">Gazpacho Andaluz</div>
+            <div class="card-desc">Tomate de pera, pepino y pimiento verde de nuestra huerta. Guarnición de pan frito,
+              jamón y huevo.</div>
+            <div class="card-footer">
+              <span class="card-price">7,00 €</span>
+              <span class="card-allergens">Gluten · Huevo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card active" data-cat="entrantes">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=600&q=80" alt="Tabla de ibéricos"
+              loading="lazy" />
+            <span class="card-badge">Para compartir</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Tabla de Ibéricos</div>
+            <div class="card-desc">Selección de embutidos de cerdo ibérico de bellota, acompañados de pan de masa madre
+              y aceite virgen extra.</div>
+            <div class="card-footer">
+              <span class="card-price">18,00 €</span>
+              <span class="card-allergens">Gluten</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- PRINCIPALES -->
+        <div class="menu-card" data-cat="principales">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80" alt="Cochinillo asado"
+              loading="lazy" />
+            <span class="card-badge">Estrella</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Cochinillo Asado al Horno de Leña</div>
+            <div class="card-desc">Cochinillo de granja propia, asado a fuego lento durante 4 horas. Piel crujiente,
+              interior tierno y jugoso.</div>
+            <div class="card-footer">
+              <span class="card-price">26,00 €</span>
+              <span class="card-allergens">Sin gluten</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="principales">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80"
+              alt="Carrilleras estofadas" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-title">Carrilleras de Ibérico al Vino Tinto</div>
+            <div class="card-desc">Guisadas a baja temperatura con vino D.O. Ribera del Duero, puré de patata trufado y
+              verduras de temporada.</div>
+            <div class="card-footer">
+              <span class="card-price">22,00 €</span>
+              <span class="card-allergens">Lácteos · Sulfitos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="principales">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&q=80" alt="Bacalao al pil-pil"
+              loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-title">Bacalao al Pil-Pil</div>
+            <div class="card-desc">Lomos de bacalao Skrei desalados 48 h, salsa pil-pil tradicional, pimientos del
+              piquillo y ajetes tiernos.</div>
+            <div class="card-footer">
+              <span class="card-price">23,00 €</span>
+              <span class="card-allergens">Pescado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- POSTRES -->
+        <div class="menu-card" data-cat="postres">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=600&q=80" alt="Tarta de queso"
+              loading="lazy" />
+            <span class="card-badge">Favorito</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Tarta de Queso «La Encina»</div>
+            <div class="card-desc">Queso manchego curado, base de galleta María, coulis de frutos rojos y ralladura de
+              limón. Receta propia desde 1994.</div>
+            <div class="card-footer">
+              <span class="card-price">7,50 €</span>
+              <span class="card-allergens">Gluten · Lácteos · Huevo</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="postres">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&q=80" alt="Natillas de la abuela"
+              loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-title">Natillas de la Abuela</div>
+            <div class="card-desc">Receta heredada de doña Carmen Herrera: huevo de corral, leche entera, canela en rama
+              y galleta artesana.</div>
+            <div class="card-footer">
+              <span class="card-price">5,00 €</span>
+              <span class="card-allergens">Lácteos · Huevo · Gluten</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BEBIDAS -->
+        <div class="menu-card" data-cat="bebidas">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80" alt="Vinos de la casa"
+              loading="lazy" />
+            <span class="card-badge">Selección</span>
+          </div>
+          <div class="card-body">
+            <div class="card-title">Vinos de la Casa</div>
+            <div class="card-desc">Selección de vinos tintos, blancos y rosados de bodegas locales. Consulta nuestra
+              carta de vinos o pide consejo al sumiller.</div>
+            <div class="card-footer">
+              <span class="card-price">desde 3,50 €</span>
+              <span class="card-allergens">Sulfitos</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card" data-cat="bebidas">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=600&q=80" alt="Sangría artesana"
+              loading="lazy" />
+          </div>
+          <div class="card-body">
+            <div class="card-title">Sangría Artesana</div>
+            <div class="card-desc">Elaborada a diario con vino tinto de Rioja, frutas frescas de temporada, canela y un
+              toque de brandy.</div>
+            <div class="card-footer">
+              <span class="card-price">5,50 € / jarra 14 €</span>
+              <span class="card-allergens">Sulfitos</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AMBIENTE -->
+  <section id="ambiente" class="section-pad">
+    <div class="container">
+      <div class="ambiente-header reveal">
+        <span class="section-tag">Espacios</span>
+        <h2 class="section-title" style="color:var(--cream);">Nuestro <em style="color:var(--warm1);">Ambiente</em></h2>
+        <div class="ornament" style="justify-content:center;">
+          <div class="dot"></div>
+          <hr style="border-color:var(--brown);" />
+          <div class="dot"></div>
+        </div>
+        <p style="font-size:1.1rem;font-style:italic;color:var(--brown-l);max-width:480px;margin:0 auto;">Piedra, madera
+          y luz cálida. Un refugio donde el tiempo se detiene.</p>
+      </div>
+      <div class="gallery-masonry reveal">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?w=800&q=80" alt="Sala principal"
+            loading="lazy" />
+        </div>
+        <div class="gallery-item" style="height:200px;">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=700&q=80" alt="Detalle mesa"
+            loading="lazy" />
+        </div>
+        <div class="gallery-item" style="height:200px;">
+          <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=700&q=80" alt="Terraza exterior"
+            loading="lazy" />
+        </div>
+        <div class="gallery-item" style="height:200px;">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=700&q=80" alt="Detalle plato"
+            loading="lazy" />
+        </div>
+        <div class="gallery-item" style="height:200px;">
+          <img src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?w=700&q=80" alt="Barra de vinos"
+            loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVA -->
+  <section id="reserva" class="section-pad">
+    <div class="container">
+      <div class="reserva-wrap">
+        <div class="reserva-text reveal">
+          <span class="section-tag">Reservas</span>
+          <h2 class="section-title">Reserva tu<br><em>mesa hoy</em></h2>
+          <div class="ornament">
+            <div class="dot"></div>
+            <hr />
+            <div class="dot"></div>
+          </div>
+          <p class="section-body">Ven a disfrutar de una experiencia gastronómica única. Te recomendamos reservar con
+            antelación, especialmente los fines de semana y festivos.</p>
+          <div class="info-list">
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+              </div>
+              <div class="info-content">
+                <label>Dirección</label>
+                <p>C. Periodista José Luis de Córdoba, 22, Sureste, 14010 Córdoba</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+              </div>
+              <div class="info-content">
+                <label>Teléfono</label>
+                <p>+34 91 123 45 67</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67V7z" />
+                </svg>
+              </div>
+              <div class="info-content">
+                <label>Horario</label>
+                <p>Mar–Jue: 13:30–16:00 · 21:00–23:30<br>Vie–Dom: 13:00–17:00 · 20:30–00:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reserva-form reveal">
+          <div class="form-title">¿Nos visitas?</div>
+          <div class="form-sub">Reserva tu mesa en segundos</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-nombre">Nombre</label>
+              <input id="f-nombre" type="text" placeholder="Tu nombre" />
+            </div>
+            <div class="form-group">
+              <label for="f-telefono">Teléfono</label>
+              <input id="f-telefono" type="tel" placeholder="+34 6XX XXX XXX" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-fecha">Fecha</label>
+              <input id="f-fecha" type="date" />
+            </div>
+            <div class="form-group">
+              <label for="f-hora">Hora</label>
+              <select id="f-hora">
+                <option value="">Seleccionar hora</option>
+                <option>13:30</option>
+                <option>14:00</option>
+                <option>14:30</option>
+                <option>15:00</option>
+                <option>15:30</option>
+                <option>21:00</option>
+                <option>21:30</option>
+                <option>22:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-personas">Número de personas</label>
+            <select id="f-personas">
+              <option value="">Seleccionar</option>
+              <option>1 persona</option>
+              <option>2 personas</option>
+              <option>3 personas</option>
+              <option>4 personas</option>
+              <option>5 personas</option>
+              <option>6 personas</option>
+              <option>Más de 6 (consultar)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-notas">Notas especiales</label>
+            <textarea id="f-notas" placeholder="Alergias, ocasiones especiales, preferencias de mesa…"></textarea>
+          </div>
+          <button class="form-submit" id="submitBtn">Solicitar Reserva</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand-name">El <span>Tema</span></div>
+        <div class="brand-tagline">· Cocina de Raíz ·</div>
+        <p>Tradición, producto local y pasión por la cocina. Desde 1987 llevando a tu mesa los sabores más auténticos de
+          nuestra tierra.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z" />
+            </svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 2v4h-2c-.69 0-1 .81-1 1.5V10h3l-.5 4H14v8h-4v-8H7v-4h3V7c0-2.7 1.72-5 5-5h2z" />
+            </svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="TripAdvisor">
+            <svg viewBox="0 0 24 24">
+              <circle cx="6.5" cy="13.5" r="2.5" />
+              <circle cx="17.5" cy="13.5" r="2.5" />
+              <path
+                d="M12 8C8.5 8 5.5 9.5 3.5 12c.7.3 1.3.7 1.9 1.2A7.5 7.5 0 0 1 12 10a7.5 7.5 0 0 1 6.6 3.2c.6-.5 1.2-.9 1.9-1.2C18.5 9.5 15.5 8 12 8zm-6 7a1 1 0 1 1 1-1 1 1 0 0 1-1 1zm12 0a1 1 0 1 1 1-1 1 1 0 0 1-1 1z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#nosotros">Nuestra Historia</a></li>
+          <li><a href="#menu">La Carta</a></li>
+          <li><a href="#ambiente">El Espacio</a></li>
+          <li><a href="#reserva">Reservas</a></li>
+          <li><a href="#">Eventos Privados</a></li>
+          <li><a href="#">Aviso Legal</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horarios</h4>
+        <div class="hours-item"><span class="day">Lunes</span><span>Cerrado</span></div>
+        <div class="hours-item"><span class="day">Mar – Jue</span><span>13:30–16h · 21–23:30h</span></div>
+        <div class="hours-item"><span class="day">Vie – Sáb</span><span>13–17h · 20:30–00h</span></div>
+        <div class="hours-item"><span class="day">Domingo</span><span>13–17h</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 El Tema · Todos los derechos reservados</p>
+      <p>C. Periodista José Luis de Córdoba, 22, Sureste, 14010 Córdoba</p>
+    </div>
+  </footer>
+
+  <script src="restaurante.js"></script>
+</body>
+
+</html>
